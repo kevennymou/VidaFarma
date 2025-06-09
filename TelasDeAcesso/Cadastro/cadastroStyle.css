@@ -79,3 +79,23 @@ body {
   text-decoration: underline;
   color: #004590;
 }
+
+@media (max-width: 480px) {
+  #conteudo-tela-cadastro {
+    width: 90%;
+    padding: 20px;
+  }
+
+  #conteudo-form input {
+    font-size: 16px;
+  }
+
+  #botao-cadastrar {
+    font-size: 16px;
+  }
+
+  #caminho-login {
+    font-size: 14px;
+    text-align: center;
+  }
+}

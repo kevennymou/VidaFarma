@@ -79,3 +79,18 @@ body {
   text-decoration: underline;
   color: #004590;
 }
+
+@media (max-width: 480px) {
+  #conteudo-tela-login {
+    width: 90%;
+    padding: 20px;
+  }
+
+  #conteudo-form input {
+    font-size: 16px;
+  }
+
+  #botao-entrar {
+    font-size: 16px;
+  }
+}
