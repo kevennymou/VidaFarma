@@ -1,0 +1,506 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 40px;
+    background-color: white;
+    border-bottom: 1px solid #e5e5e5;
+
+}
+
+.header .logo h1 {
+    color: #00A5C2;
+    font-size: 24px;
+}
+
+.search-bar {
+    flex: 1;
+    display: flex;
+    max-width: 600px;
+    margin: 0 40px;
+    background-color: #f5f5f5;
+    border-radius: 50px;
+    padding: 8px 16px;
+    align-items: center;
+    
+}
+
+.search-bar input {
+    flex: 1;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 16px;
+    padding: 8px;
+}
+
+.search-bar .search-icons img {
+    width: 20px;
+    margin-left: 16px;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    
+}
+
+.menu p {
+    font-size: 12px;
+    color: #333;
+}
+
+.menu a {
+    color: #00A5C2;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu .cart strong {
+    color: #000;
+}
+
+nav.sub-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 40px;
+    background-color: white;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.sub-menu div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sub-menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.sub-menu .categories a {
+    font-weight: bold;
+}
+
+.sub-menu .links {
+    gap: 24px;
+}
+
+.sub-menu .descontos button {
+    background-color: #00A5C2;
+    color: white;
+    border: none;
+    padding: 8px 24px;
+    border-radius: 24px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.sub-menu .descontos button:hover {
+    background-color: #00A5C2;
+}
+
+section.categories-icons {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 24px 40px;
+    flex-wrap: wrap;
+}
+
+.categories-icons .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.categories-icons .icon-bg {
+    background-color: #fdf8f2;
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.categories-icons .icon-bg img,
+.categories-icons .icon-bg i {
+    width: 32px;
+    height: 32px;
+    color: #00A5C2;
+    font-size: 32px;
+}
+
+.categories-icons .item p {
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.carousel {
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  margin: 30px auto;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  display: block;
+}
+
+button.prev,
+button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  z-index: 10;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+.carousel-dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.carousel-dots span {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel-dots .active {
+  background-color: #666;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 20px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  width: 255px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  font-size: 1.2rem;
+  color: #00A5C2;
+  margin: 0 0 5px;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0 0 10px;
+}
+
+.card-content .price {
+  font-size: 1.1rem;
+  color: #2E7D32;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.card-content button {
+  width: 100%;
+  padding: 10px;
+  background-color: #00A5C2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.card-content button:hover {
+  background-color: #00A5C2;
+}
+
+.nomes-ofertas {
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+
+.nomes-visto {
+   margin-left: 60px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+} 
+
+
+.footer {
+  background-color: #f8f8f8;
+  color: #333;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.footer-box {
+  flex: 1 1 180px;
+  margin: 10px;
+}
+
+.footer-box h4 {
+  margin-bottom: 10px;
+  color: #00A5C2; 
+}
+
+.footer-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-box ul li {
+  margin-bottom: 8px;
+}
+
+.footer-box ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-box ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.payment-methods {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.payment-methods img {
+  margin: 0 5px;
+  width: 40px;
+  height: auto;
+}
+
+.brand {
+  color: #777;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 20px;
+  }
+
+  .search-bar {
+    margin: 16px 0;
+    width: 100%;
+  }
+
+  .menu {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 12px;
+  }
+
+  nav.sub-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px 20px;
+  }
+
+  .sub-menu .links {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .sub-menu .descontos {
+    width: 100%;
+  }
+
+  section.categories-icons {
+    gap: 24px;
+    padding: 20px;
+    justify-content: center;
+  }
+
+  .carousel {
+    width: 100%;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .footer-box h4 {
+    font-size: 16px;
+  }
+
+  .footer-box ul li {
+    font-size: 14px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .payment-methods img {
+    max-width: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header .logo h1 {
+    font-size: 20px;
+  }
+
+  .menu p {
+    font-size: 10px;
+  }
+
+  .card-content h3 {
+    font-size: 1rem;
+  }
+
+  .card-content p {
+    font-size: 0.875rem;
+  }
+
+  .card-content .price {
+    font-size: 1rem;
+  }
+
+  .search-bar input {
+    font-size: 14px;
+  }
+
+  .carousel button.prev,
+  .carousel button.next {
+    padding: 8px;
+  }
+}
+
+
+
+
