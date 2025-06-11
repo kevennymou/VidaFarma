@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VidaFarma</title>
+    <link rel="stylesheet" href="../css/homestyle.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+</head>
+<body>
+
+    <div id="header-root"></div>
+
+    <nav class="sub-menu">
+    <div class="location">
+        <img src="location-icon.png" alt="Localização">
+        <a href="#">Insira seu CEP</a>
+    </div>
+
+    <div class="categories">
+        <img src="menu-icon.png" alt="Menu">
+        <a href="#"><strong>Todas as categorias</strong></a>
+    </div>
+
+    <div class="links">
+        <a href="#">Encontre uma farmácia</a>
+        <a href="#">Serviços de saúde</a>
+        <a href="#">Descontos e benefícios</a>
+        <a href="#">Lojas parceiras</a>
+        <a href="#">Baixe o app</a>
+    </div>
+
+    <div class="descontos">
+        <button>Exibir descontos Univers</button>
+    </div>
+</nav>
+
+<section class="categories-icons">
+    <div class="item">
+        <div class="icon-bg"><i class="fi fi-rr-gift-box-benefits" ></i></div>
+        <p>Queridinhos da internet</p>
+    </div>
+    <div class="item">
+        <div class="icon-bg"><i class="fi fi-rr-badge-percent"></i></div>
+        <p>Ofertas do dia</p>
+    </div>
+    <div class="item"> 
+        <div class="icon-bg"><i class="fi fi-rr-treatment"></i></div>
+        <p>Mantenha o Tratamento</p>
+    </div>
+    <div class="item">
+        <div class="icon-bg"><i class="fi fi-rr-box-heart"></i></div>
+        <p>Serviços e Vacinas</p>
+    </div>
+    <div class="item">
+        <div class="icon-bg"><i class="fi fi-rr-medication"></i></div>
+        <p>Dose Certa</p>
+    </div>
+    <div class="item">
+        <div class="icon-bg"><i class="fi fi-rr-air-freshener"></i></div>
+        <p>Perfumes</p>
+    </div>
+    <div class="item">
+        <div class="icon-bg"><i class="fi fi-rr-preview"></i></div>
+        <p>Seus Pontos stix</p>
+    </div>
+    <div class="item">
+        <div class="icon-bg"><i class="fi fi-rr-capsules"></i></div>
+        <p>Manipulação</p>
+    </div>
+</section>
+<div class="carousel">
+  <button class="prev">&#10094;</button>
+  
+  <div class="carousel-track">
+    <div class="carousel-item">
+      <img src="../img/download (1).png" alt="Banner 1">
+    </div>
+    <div class="carousel-item">
+      <img src="../img/download (1).png" alt="Banner 2">
+    </div>
+    <div class="carousel-item">
+      <img src="../img/download (1).png" alt="Banner 3">
+    </div>
+  </div>
+  
+  <button class="next">&#10095;</button>
+</div>
+
+<div class="carousel-dots"></div>
+
+<div class="nomes-ofertas">
+    <h2>Ofertas</h2>
+</div>
+
+<div class="cards-container">
+
+  <div class="card">
+    <img src="../img/download (1).jpeg" alt="Huggies Supreme Care">
+    <div class="card-content">
+      <h3>Polivitamínico Centrum Essentials</h3>
+      <p> Mulher de A a Zinco 30 comprimidos</p>
+      <span class="price">R$ 62,93</span>
+      <button>Comprar</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="../img/download (2).jpeg" alt="Needs Pants XG">
+    <div class="card-content">
+      <h3>Sonridor Dor e Febre Paracetamol</h3>
+      <p>750mg 10 comprimidos dentro de uma caixa</p>
+      <span class="price">R$ 6,99</span>
+      <button>Comprar</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="../img/Hidratante Facial Nívea Antissinais Creme 100g.jpeg" alt="Pampers Confort Sec">
+    <div class="card-content">
+      <h3>Hidratante Facial Nívea Antissinais Creme 100g</h3>
+      <p>Hidratação intensa sem deixar a pele oleosa.</p>
+      <span class="price">R$ 26,99</span>
+      <button>Comprar</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="../img/Desodorante Antitranspirante Aerosol Nivea Black & White Invisible Clear Feminino 72h 150ml.jpeg" alt="Huggies Supreme Care">
+    <div class="card-content">
+      <h3>Desodorante Nivea Black & White Invisible</h3>
+      <p>2x mais agentes antitranspirantes e minerais.</p>
+      <span class="price">R$ 12,60</span>
+      <button>Comprar</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="../img/Creme Dental Elmex Anticárie Professional 110g.jpeg" alt="Huggies Supreme Care">
+    <div class="card-content">
+      <h3>Creme Dental Elmex Anticárie Professional 110g</h3>
+      <p>
+Ajuda a reduzir ácidos produzidos pelas bactérias.
+Marca Nº 1 recomendada por dentistas na Suíça.</p>
+      <span class="price">R$ 89,90</span>
+      <button>Comprar</button>
+    </div>
+  </div>
+
+</div>
+
+<div class="nomes-visto">
+    <h2>Mais Visto da VidaFarma</h2>
+</div>
+
+<div class="cards-container">
+
+  <div class="card">
+    <img src="../img/Sensor Medtronic GS3 MMT-7020C1 Guardian Sensor 3 5 Unidades.jpeg" alt="Huggies Supreme Care">
+    <div class="card-content">
+      <h3>Sensor Medtronic GS3 MMT-7020C1 Guardian Sensor 3 5 Unidades</h3>
+      <p>70 Fraldas - Conforto dia e noite</p>
+      <span class="price">R$ 2310,00</span>
+      <button>Comprar</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="../img/Kit Transmissor Medtronic Guardian 4 Starter MMT-7840W8.jpeg" alt="Needs Pants XG">
+    <div class="card-content">
+      <h3>Kit Transmissor Medtronic Guardian 4 Starter MMT-7840W8</h3>
+      <p>Embalagem contém 1 unidade.</p>
+      <span class="price">R$ 3770,00</span>
+      <button>Comprar</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="../img/Bemove Curcuma 30 comprimidos.jpeg" alt="Pampers Confort Sec">
+    <div class="card-content">
+      <h3>Bemove Curcuma 30 comprimidos</h3>
+      <p>Suplemento alimentar em comprimidos.
+Formulado .</p>
+      <span class="price">R$ 319,90</span>
+      <button>Comprar</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="../img/Cateter Medtronic MinimMed Silhouette.jpeg" alt="Huggies Supreme Care">
+    <div class="card-content">
+      <h3>Cateter Medtronic MinimMed Silhouette MMT-381/MMT-381A</h3>
+      <p>70 Fraldas - Conforto dia e noite</p>
+      <span class="price">R$ 1370,00</span>
+      <button>Comprar</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="../img/Creme Facial Esthederm Lift&Repair 50ml.jpeg" alt="Huggies Supreme Care">
+    <div class="card-content">
+      <h3>Creme Facial Esthederm Lift&Repair 50ml</h3>
+      <p>
+Promove efeito lifting e deixa a pele macia e confortável.</p>
+      <span class="price">R$ 89,90</span>
+      <button>Comprar</button>
+    </div>
+  </div>
+
+</div>
+
+<div id="footer-root"></div>
+
+</body>
+<script type="text/babel" src="script.js"></script>
+</html>
