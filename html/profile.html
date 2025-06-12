@@ -5,42 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/profilestyle.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <h1>VIDAFARMA</h1>
-        </div>
-
-        <div class="search-bar">
-            <input type="text" placeholder="O que você está buscando?">
-            <div class="search-icons">
-                <i class="fi fi-tr-circle-microphone-lines"></i>
-            </div>
-        </div>
-
-        <div class="menu">
-            <div class="login">
-                <p>Boas-vindas!<br><a href="#">Entrar ou cadastrar</a></p>
-            </div>
-            <div class="orders">
-                <p><a href="#">Acompanhar<br>Pedidos</a></p>
-            </div>
-            <div class="cart">
-                <p>Cesta<br><strong>R$0,00</strong></p>
-            </div>
-        </div>
-    </header>
+    <div id="header-root"></div>
 
     <nav class="sub-menu">
     <div class="location">
-        <img src="location-icon.png" alt="Localização">
+        <div class="icon-bg"><i class="fi fi-rr-marker"></i> <p>Localização</p></div>
         <a href="#">Insira seu CEP</a>
     </div>
 
     <div class="categories">
-        <img src="menu-icon.png" alt="Menu">
+        <div class="icon-bg"><i class="fi fi-rr-align-justify"></i><p>Menu</p></div>
         <a href="#"><strong>Todas as categorias</strong></a>
     </div>
 
@@ -64,13 +45,14 @@
       <li><a href="#">Resumo da conta</a></li>
       <li><a href="#">Gerenciar perfil</a></li>
       <li><a href="#">Privacidade de dados</a></li>
+      <li><a href="../html/prescription.html">Minhas Prescrições</a></li>
       <li><a href="#">Meus pedidos</a></li>
       <li><a href="#">Meus Benefícios</a></li>
       <li><a href="#">Serviços de saúde</a></li>
       <li><a href="#">Meus endereços</a></li>
       <li><a href="#">Alterar senha</a></li>
       <li><a href="#">Meus cartões</a></li>
-      <li class="logout"><a href="#">Sair</a></li>
+      <li class="logout"><a href="../html/login.html">Sair</a></li>
     </ul>
   </aside>
 
@@ -84,10 +66,9 @@
       <div class="card pedidos">
         <h3>Últimos Pedidos</h3>
         <div class="pedido-content">
-          <img src="carrinho.png" alt="Sem pedidos">
           <p><strong>Você ainda não fez nenhum pedido</strong></p>
           <p>Que tal aproveitar nossas ofertas?</p>
-          <button class="btn">Aproveitar ofertas</button>
+          <a href="../html/home.html"> <button class="btn">Aproveitar ofertas</button></a>
         </div>
         <a href="#" class="link-pedidos">Ver todos os pedidos</a>
       </div>
@@ -113,71 +94,12 @@
   </main>
 </div>
 
-<footer class="footer">
-  <div class="footer-top">
-    <div class="footer-box">
-      <h4>Institucional</h4>
-      <ul>
-        <li><a href="#">Nossa História</a></li>
-        <li><a href="#">Nossas farmácias</a></li>
-        <li><a href="#">Sustentabilidade</a></li>
-        <li><a href="#">Ética e Compliance</a></li>
-        <li><a href="#">Trabalhe Conosco</a></li>
-      </ul>
-    </div>
-    <div class="footer-box">
-      <h4>Serviços</h4>
-      <ul>
-        <li><a href="#">Programa Mais Saúde</a></li>
-        <li><a href="#">Vacinação Corporativa</a></li>
-        <li><a href="#">Manipulação</a></li>
-        <li><a href="#">Assinatura</a></li>
-        <li><a href="#">Programa de Laboratório</a></li>
-      </ul>
-    </div>
-    <div class="footer-box">
-      <h4>Atendimento</h4>
-      <ul>
-        <li><a href="#">Central de Atendimento</a></li>
-        <li><a href="#">Tire suas dúvidas</a></li>
-        <li><a href="#">Formas de Pagamento</a></li>
-        <li><a href="#">Troca e Devolução</a></li>
-        <li><a href="#">Prazo de Entrega</a></li>
-      </ul>
-    </div>
-    <div class="footer-box">
-      <h4>Segurança e Privacidade</h4>
-      <ul>
-        <li><a href="#">Como protegemos seus dados</a></li>
-        <li><a href="#">Política de Privacidade</a></li>
-        <li><a href="#">Portal do Titular dos Dados</a></li>
-      </ul>
-    </div>
-    <div class="footer-box">
-      <h4>Nossas Redes</h4>
-      <div class="social-icons">
-        <a href="#"><i class="fi fi-brands-facebook"></i><p>Facebook</p></a>
-        <a href="#"><i class="fi fi-brands-instagram"></i><p>Instagram</p></a>
-        <a href="#"><i class="fi fi-brands-twitter-alt-circle"></i><p>Twitter</p></a>
-        <a href="#"><i class="fi fi-brands-linkedin"></i><p>LinkedIn</p></a>
-      </div>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    <div class="payment-methods">
-      <h5>Formas de Pagamento</h5>
-      <img src="../img/visa.png" alt="Visa">
-      <img src="../img/mastercard.png" alt="Mastercard">
-      <img src="../img/elo.png" alt="Elo">
-      <img src="../img/pix.png" alt="Pix">
-      <img src="../img/amex.jpeg" alt="Amex">
-    </div>
-    <div class="brand">
-      <p>&copy; 2025 VidaFarma - Uma empresa RD Saúde</p>
-    </div>
-  </div>
-</footer>
+<div id="footer-root"></div>
 
 </body>
+
+<script type="text/babel" src="../scripts/header.js"></script>
+<script src="../scripts/home.js"></script>
+<script type="text/babel" src="../scripts/footer.js"></script>
+
 </html>

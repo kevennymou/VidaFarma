@@ -10,6 +10,8 @@ body {
     color: #333;
 }
 
+
+
 .header {
     display: flex;
     align-items: center;
@@ -20,10 +22,21 @@ body {
 
 }
 
+.link-logo {
+    text-decoration: none;
+    color: inherit;
+
+}
+
 .header .logo h1 {
     color: #00A5C2;
     font-size: 24px;
+    text-decoration: none;
+  
+    
 }
+
+
 
 .search-bar {
     flex: 1;

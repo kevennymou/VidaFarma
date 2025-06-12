@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Página de Compra</title>
+
+  <link rel="stylesheet" href="../css/Header.css">
+  <link rel="stylesheet" href="../css/Produto.css">
+  <link rel="stylesheet" href="../css/Footer.css">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+  <script type="text/babel" src="../scripts/header.js"></script>
+  <script type="text/babel" src="../scripts/footer.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel">
+    // SubMenu
+    const SubMenu = () => (
+      <nav className="sub-menu">
+        <div className="location">
+          <div class="icon-bg"><i class="fi fi-rr-marker"></i> <p>Localização</p></div>
+          <a href="#">Insira seu CEP</a>
+        </div>
+        <div className="categories">
+          <div class="icon-bg"><i class="fi fi-rr-align-justify"></i><p>Menu</p></div>
+          <a href="#"><strong>Todas as categorias</strong></a>
+        </div>
+        <div className="links">
+          <a href="#">Encontre uma farmácia</a>
+          <a href="#">Serviços de saúde</a>
+          <a href="#">Descontos e benefícios</a>
+          <a href="#">Lojas parceiras</a>
+          <a href="#">Baixe o app</a>
+        </div>
+        <div className="descontos">
+          <button>Exibir descontos Univers</button>
+        </div>
+      </nav>
+    );
+
+    // Produto
+    function Produto() {
+      const diminuir = () => {
+        const input = document.getElementById("quantidade");
+        if (parseInt(input.value) > 1) input.value = parseInt(input.value) - 1;
+      };
+
+      const aumentar = () => {
+        const input = document.getElementById("quantidade");
+        input.value = parseInt(input.value) + 1;
+      };
+
+      const calcularFrete = () => {
+        const cep = document.getElementById("cep").value;
+        const resultado = document.getElementById("resultado-frete");
+        if (cep === "") {
+          resultado.innerText = "Digite um CEP válido.";
+        } else {
+          resultado.innerText = `Frete para ${cep}: R$ 12,90`;
+        }
+      };
+
+      return (
+        <div className="produto-container">
+          <div>
+            <img src="/assets/produto.png" alt="Produto" />
+          </div>
+
+          <div className="produto-detalhes">
+            <div className="produto-info">
+              <h2 id="titulo-produto">Protetor Solar Facial Darrow Actine Aquafluid FPS 60 40g</h2>
+              <h4 id="marca-produto">Darrow</h4>
+              <h4 id="vendido-loja">Vendido e entregue por VIDAFARMA</h4>
+              <h5 id="preco-original">R$ 79,99</h5>
+              <h5 id="preco-atual">R$ 62,79</h5>
+            </div>
+
+            <div className="produto-acoes">
+              <div className="quantidade-container">
+                <label htmlFor="quantidade">Quantidade:</label>
+                <button onClick={diminuir}>-</button>
+                <input type="number" id="quantidade" defaultValue="1" min="1" />
+                <button onClick={aumentar}>+</button>
+              </div>
+
+              <button className="Botao-compra">Comprar</button>
+
+              <div className="frete-container">
+                <label htmlFor="cep">Calcular frete:</label><br />
+                <input type="text" id="cep" placeholder="Digite seu CEP" />
+                <button onClick={calcularFrete}>Calcular</button>
+                <p id="resultado-frete"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    // Página principal
+    function PedidosPage() {
+      return (
+        <div>
+          <Header />
+          <SubMenu />
+          <Produto />
+          <Footer />
+        </div>
+      );
+    }
+
+    // Renderizar
+    ReactDOM.createRoot(document.getElementById('root')).render(<PedidosPage />);
+  </script>
+</body>
+</html>

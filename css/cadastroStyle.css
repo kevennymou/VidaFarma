@@ -1,0 +1,101 @@
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f2f5;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#conteudo-tela-cadastro {
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+#conteudo-tela-cadastro h1 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+#conteudo-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#conteudo-form label {
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #555;
+}
+
+#conteudo-form input {
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+#botao-cadastrar {
+  padding: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color ease 0.5s, transform 0.5s ease;
+}
+
+#botao-cadastrar:hover {
+  background-color: rgb(95, 0, 0);
+  transform: scale(1.1);
+}
+
+#caminho-login {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 14px;
+  color: #555;
+}
+
+#caminho-login a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color ease 0.5s;
+}
+
+#caminho-login a:hover {
+  text-decoration: underline;
+  color: #004590;
+}
+
+@media (max-width: 480px) {
+  #conteudo-tela-cadastro {
+    width: 90%;
+    padding: 20px;
+  }
+
+  #conteudo-form input {
+    font-size: 16px;
+  }
+
+  #botao-cadastrar {
+    font-size: 16px;
+  }
+
+  #caminho-login {
+    font-size: 14px;
+    text-align: center;
+  }
+}

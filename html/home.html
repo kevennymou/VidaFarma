@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="../css/homestyle.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
-    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 
 
 </head>
@@ -19,12 +19,12 @@
 
     <nav class="sub-menu">
     <div class="location">
-        <img src="location-icon.png" alt="Localização">
+        <div class="icon-bg"><i class="fi fi-rr-marker"></i> <p>Localização</p></div>
         <a href="#">Insira seu CEP</a>
     </div>
 
     <div class="categories">
-        <img src="menu-icon.png" alt="Menu">
+        <div class="icon-bg"><i class="fi fi-rr-align-justify"></i><p>Menu</p></div>
         <a href="#"><strong>Todas as categorias</strong></a>
     </div>
 
@@ -102,12 +102,12 @@
 <div class="cards-container">
 
   <div class="card">
-    <img src="../img/download (1).jpeg" alt="Huggies Supreme Care">
+    <img src="../assets/produto.png" alt="Huggies Supreme Care">
     <div class="card-content">
-      <h3>Polivitamínico Centrum Essentials</h3>
-      <p> Mulher de A a Zinco 30 comprimidos</p>
+      <h3>Protetor Solar Facial Darrow Actine Aquafluid FPS 60 40g</h3>
+      <p> Darrow</p>
       <span class="price">R$ 62,93</span>
-      <button>Comprar</button>
+      <button id="btnPedido">Comprar</button>
     </div>
   </div>
 
@@ -218,5 +218,10 @@ Promove efeito lifting e deixa a pele macia e confortável.</p>
 <div id="footer-root"></div>
 
 </body>
-<script type="text/babel" src="script.js"></script>
+
+<script type="text/babel" src="../scripts/header.js"></script>
+<script src="../scripts/home.js"></script>
+<script type="text/babel" src="../scripts/footer.js"></script>
+
+
 </html>
