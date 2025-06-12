@@ -1,0 +1,111 @@
+.footer {
+  background-color: #f8f8f8;
+  color: #333;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+  gap: 20px;
+}
+
+.footer-box {
+  flex: 1 1 220px;
+  margin: 10px;
+  min-width: 220px;
+}
+
+.footer-box h4 {
+  margin-bottom: 10px;
+  color: #00A5C2;
+}
+
+.footer-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-box ul li {
+  margin-bottom: 8px;
+}
+
+.footer-box ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-box ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.payment-methods {
+  margin-bottom: 10px;
+}
+
+.payment-methods img {
+  margin: 0 5px;
+  width: 40px;
+  height: auto;
+}
+
+.brand {
+  color: #777;
+  font-size: 14px;
+}
+
+/* Responsividade aprimorada */
+@media (max-width: 1024px) {
+  .footer-top {
+    justify-content: center;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-box {
+    flex: 1 1 100%;
+    margin: 20px 0;
+    min-width: unset;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .payment-methods img {
+    width: 32px;
+  }
+}
