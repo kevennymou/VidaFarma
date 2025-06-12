@@ -16,6 +16,12 @@ body {
     
 }
 
+.link-logo {
+    text-decoration: none;
+    color: inherit;
+
+}
+
 header {
   background-color: #00A5C2;
   padding: 20px;

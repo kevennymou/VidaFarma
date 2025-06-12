@@ -25,6 +25,12 @@ body {
     font-size: 24px;
 }
 
+.link-logo {
+    text-decoration: none;
+    color: inherit;
+
+}
+
 .search-bar {
     flex: 1;
     display: flex;

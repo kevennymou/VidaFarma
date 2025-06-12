@@ -33,6 +33,6 @@ form.addEventListener("submit", (event) => {
     return;
   }
 
-  window.location.href = "../Login/login.html";
+  window.location.href = "./home.html";
   alert("Conta criada com sucesso!");
 });

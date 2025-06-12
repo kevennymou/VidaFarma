@@ -4,7 +4,9 @@ function Header() {
 
       <header className="header">
         <div className="logo">
-          <a href="../html/home.html" className=".link-logo"><h1>VIDAFARMA</h1></a>
+          <a href="../html/home.html" className="link-logo">
+            <h1>VIDAFARMA</h1>
+          </a>
         </div>
 
         <div className="search-bar">
@@ -16,7 +18,7 @@ function Header() {
             <p>Perfil<br /><a href="../html/profile.html">Kevenny</a></p>
           </div>
           <div className="orders">
-            <p><a href="../html/pedido.html">Acompanhar<br />Pedidos</a></p>
+            <p><a href="../html/profile.html">Acompanhar<br />Pedidos</a></p>
           </div>
           <div className="cart">
             <p>Cesta<br /><strong>R$ 0,00</strong></p>
