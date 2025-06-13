@@ -1,4 +1,4 @@
-# PROFESSOORRR ABRE A BRANCH "MAIN" PARA CORRIRGIR O PROJETO 
+# PROFESSOR A BRANCH "MAIN" É A QUE TEM O CÓDIGO ATUALIZADO
 
 
 💊 Sistema Integrado de Prescrição e Compra de Medicamentos 
